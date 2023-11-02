@@ -33,11 +33,11 @@
 import axios from "axios"
 import { ref } from "vue";
 import { useRouter } from "vue-router"
-import TrackedCities from "../components/trackedCities.vue"
+import TrackedCities from "../components/TrackedCities.vue"
 import CityCardSkeleton from "../components/CityCardSkeleton.vue";
 const router = useRouter()
 const previewCity = (searchResult) => {
-  console.log(searchResult)
+  // console.log(searchResult)
   const [state, city] = searchResult.display_name.split(",")
   router.push({
     name: "cityView",

@@ -218,9 +218,9 @@ const getWeatherData = async () => {
         const currentWeather = currentWeatherResponse.data
         const DailyForecast = DailyForecastResponse.data
         const hourlyForecast = hourlyForecastResponse.data
-        console.log(currentWeather)
-        console.log(DailyForecast)
-        console.log(hourlyForecast)
+        // console.log(currentWeather)
+        // console.log(DailyForecast)
+        // console.log(hourlyForecast)
         return { currentWeather, DailyForecast, hourlyForecast };
     } catch (err) {
         console.error(err);
